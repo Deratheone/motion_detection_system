@@ -129,7 +129,7 @@ void loop() {
 }
 
 /*
- * Play startup/reset tune - welcoming and professional
+ * Play startup/reset tune
  */
 void playStartupTune() {
   // Professional startup sequence - rising scale
@@ -515,7 +515,6 @@ void createStrobeEffect(unsigned long elapsed) {
  * Update status LED when system is not in alarm or mode display
  */
 void updateStatusLED() {
-  // No need to update if we're displaying mode or alarm is active
   if (displayingMode || alarmActive) return;
   
   // Choose colors based on current mode
